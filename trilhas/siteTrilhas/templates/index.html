@@ -3,10 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'assets/css/' %}" />
-    <title>Teste Template</title>
+    <link rel="stylesheet" href="{%'assets/css/bootstrap.min.css%'}">
+    <link rel="stylesheet" href="{%'assets/js/bootstrap.bundle.js'%}">
+    <title>Hamburgueria</title>
+    <style>
+        .cor{
+            background-color: #3D0407;
+        }
+        .ground{
+            background-color: white;
+        }
+        .fonte{
+            color: white;
+        }
+        .margin{
+            margin-top: 30px;
+        }
+        .back{
+            color: black;
+        }
+        .serif{
+            font-family: serif;
+        }
+        .size{
+            font-size: 20px;
+        }
+        .masthead{
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+        }
+        .color-overlay{
+            position: relative;
+            text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+            text-align: center;
+        }
+        .margem{
+            margin-top: 200px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Estamos criando um template.</h1>
+<body class="cor">
+    <div class="cor fonte">
+        <div class="text-center">
+            <h1 class="serif">
+                <b>National</b>
+            </h1>
+            <h1>
+                Hambuerger
+            </h1>
+            <img src="assets/img/hamburger1.png" class="img-fluid" alt="...">
+        </div>
+    </div>
+    <br>
+    <div class="ground">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-sm-12">
+                    <div>
+                        <img src="assets/img/Hamburgueria-da-Alfândega-Ipanema.jpg" class="img-thumbnail" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <h1 class="serif">
+                       <b>Sobre</b>
+                    </h1>
+                    <h3>
+                        A National Hambuerger foi fundada em 2017 e desde então vem ganhando varios premios de culinaria, isso tudo se deve ao seus deliciosos hambuergeres
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="cor">
+    <br>
+    <div class="cor">
+        <div class="fonte container">
+            <div class="text-start">
+                <h1 class="serif">
+                    <b>Premiações</b>
+                </h1>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/hamburger2.jpg" class="card-img-top" alt="..." height="300px" width="300px">
+                        <div class="card-body">
+                          <h5 class="card-title serif text-center"><b>Melhor hamburger de 2019</b></h5>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/vector-burger-ultra-detalhado_879343-12.png" class="card-img-top" alt="..." height="300px" width="300px">
+                        <div class="card-body">
+                          <h5 class="card-title serif text-center"><b>Melhor hamburger de 2020</b></h5>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/hamburger4.webp" class="card-img-top" alt="..." height="300px" width="300px">
+                        <div class="card-body">
+                          <h5 class="card-title serif text-center"><b>Melhor hamburger de 2023</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div 
+      class="masthead"
+      style="background-image: url(assets/img/banner-hamburguer.jpg);"     
+      >
+        <div class="container">
+            <div class="color-overlay d-flex justify-content-center align-items-center">
+                <h1 class="fonte margem">
+                    <i>Venha conhecer o nosso cardapio!</i>
+                </h1>
+            </div>
+            <div class="color-overlay d-flex justify-content-center align-items-center">
+                <p style="margin-top: 50px;">
+                    <a class="btn btn-danger size" style="padding: 20px; font-size: 23px;" href="file:///C:/Users/LENOVO/Documents/html/cardapio.html" role="button"><b>Saiba mais>></b></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="cor">
+        <div class="container text-center">
+            <h1 class="fonte">
+                Conheça melhor a nossa hamburgueria
+            </h1>
+            <br>
+            <div class="row">
+              <div class="col">
+                <img src="assets/img/hamburguer-peter-dawn-sxZ_Ca6MkWM-unsplash.webp" class="img-fluid" alt="">
+              </div>
+              <div class="col-xl-5 col-sm-12 text-start fonte">
+                <h3 class="margin">
+                    <b>Localização</b>
+                    <br>
+                    <p>
+                        <i>
+                            Rua: 123 <br>
+                            Bairro: 123 <br>
+                            Nº 123
+                        </i>
+                    </p>
+                    <br>
+                    <b><b style="color: greenyellow;">W</b>hatsapp</b>
+                    <br>
+                    <p><i>(99)9999-9999</i></p>
+                    <br>
+                    <b><b style="color: plum;">I</b>nstagran</b>
+                    <br>
+                    <a href="###"><i>National Hambuerger</i></a>
+                </h3>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="text-center">
+        <p style="font-size: 20px; color: white;">
+            <strong>Todos os direitos rezervados 2024</strong>
+        </p>
+    </div>
 </body>
 </html>
